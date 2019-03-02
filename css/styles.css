@@ -5,9 +5,24 @@ GLOBAL STYLES
   box-sizing: border-box;
 }
 
+
+
 /*——————————————————————————————————
 ELEMENT STYLES
 ———————————————————————————————————*/
 body {
   background-color: #f0f0f0;
+}
+
+header {
+  margin: auto 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Russo One', 'Arial Bold', sans-serif;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
 }
