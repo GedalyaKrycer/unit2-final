@@ -11,6 +11,10 @@ GLobal STYLES
   display: table;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /*——————————————————————————————————
 Element STYLES
@@ -70,6 +74,7 @@ main {
   background-color: #fff;
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
 
 ul {
@@ -80,10 +85,6 @@ ul {
 /*——————————————————————————————————
 Nav STYLES
 ———————————————————————————————————*/
-.h1-font {
-  font-family: 'Russo One', 'Arial Bold', sans-serif;
-  text-transform: uppercase;
-}
 
 nav {
   text-align: center;
@@ -146,9 +147,11 @@ Intro STYLES
 
 .intro {
   color: #424242;
+  font-size: 18px;
+  line-height: 130%;
 }
 
-.hero {
+header {
   border-bottom: solid #E88968 3px;
 }
 
@@ -162,8 +165,8 @@ Portfolio STYLES
   padding: 20px 0;
 }
 
-.row {
-  margin: 30px 0px;
+h2 {
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -176,6 +179,7 @@ Portfolio STYLES
 
 .card p {
   margin-top: 0px;
+  margin: 0 auto;
 }
 
 .card img {
@@ -220,10 +224,14 @@ Contact STYLES
   border-bottom: solid #424242 .5px;
 }
 
-.contact {
+.contact-inner {
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+.contact-inner  h2 {
+  margin-bottom: 1rem;
 }
 
 .contact-body {
@@ -234,11 +242,11 @@ Contact STYLES
   font-weight: bold;
 }
 
-.contact a {
+.contact-inner a {
   color: #E88968;
 }
 
-.contact a:hover {
+.contact-inner a:hover {
   color: #F8D37D;
 }
 
@@ -261,7 +269,6 @@ footer {
 
 .footer-nav ul li {
   list-style-type: none;
-  display: block;
   font-size: .9rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -279,4 +286,152 @@ footer {
 
 .footer-nav a:hover {
   color: #F8D37D;
+}
+
+
+/*——————————————————————————————————
+——————————————————————————————————
+Breakpoint 768px
+——————————————————————————————————
+———————————————————————————————————*/
+@media screen and (min-width: 768px) {
+  .top-nav li {
+    display: inline-block;
+  }
+
+  .top-nav li a {
+    padding: 10px 20px;
+    background: none;
+    border-radius: 0;
+  }
+
+  nav {
+    margin-bottom: 2.5rem;
+  }
+
+  header {
+    padding-bottom: 2.5rem;
+  }
+
+  .hero {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .profile {
+    float: right;
+    margin: 0;
+  }
+
+  .intro {
+    float: left;
+    width: 60%;
+    text-align: left;
+    line-height: 150%;
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    max-width: 90%;
+  }
+
+  .card:nth-child(even) {
+    float: right;
+    width: 48%;
+  }
+
+  .card:nth-child(odd) {
+    float: left;
+    width: 48%;
+  }
+
+  .contact-inner {
+    width: 450px;
+  }
+
+  .social-media ul li {
+    display: inline-block;
+    margin-left: 5rem;
+    margin-bottom: 0;
+  }
+
+  .social-media ul li:first-child {
+    margin-left: 0rem;
+  }
+
+  .footer-nav ul li {
+    display: block;
+    margin-left: 1rem;
+  }
+
+  .footer-nav ul li:first-child {
+    display: none;
+  }
+
+}
+
+
+
+/*——————————————————————————————————
+——————————————————————————————————
+Breakpoint 1024px
+——————————————————————————————————
+———————————————————————————————————*/
+@media screen and (min-width: 1024px) {
+  nav,
+  .hero,
+  .projects,
+  footer {
+    max-width: 1170px;
+  }
+
+  nav {
+    margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .top-nav {
+    float: right;
+  }
+
+  .hero {
+    padding: 5rem 20px;
+    width: 100%;
+  }
+
+  .profile {
+    width: 250px;
+    margin-top: 2rem;
+  }
+
+  .intro {
+    margin-top: 4rem;
+    max-width: 600px;
+    font-size: 1.8rem;
+  }
+
+  .projects {
+    margin: 0 auto;
+  }
+
+  .card:nth-child(even) {
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+  }
+
+  .card:nth-child(odd) {
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+  }
+
+
+
 }

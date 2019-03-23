@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Gedalya Krycer</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <header id="top" class="hero">
-      <nav>
-        <h1 class="name"><a href="#" class="h1-font">Gedalya Krycer</a></h1>
+    <header id="top">
+      <nav class="cf">
+        <h1 class="name">Gedalya Krycer</h1>
         <ul class="top-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -22,46 +22,46 @@
         </ul>
       </nav>
       <!-- INTRO -->
-      <img class="profile" src="img/responsive-layout-profile.png" alt="Profile Image">
-      <p class="intro">Hi, I am a Senior Web Designer, who loves all things digital! I am completing a degree in front end web design and am excited to start using my new HTML, CSS and Java Script skills!</p>
+      <div class="cf hero">
+        <img class="profile" src="img/responsive-layout-profile.svg" alt="Profile Image">
+        <p class="intro">Hi, I am a Senior Web Designer, who loves all things digital! I am completing a degree in front end web design and am excited to start using my new HTML, CSS and Java Script skills!</p>
+      </div>
     </header>
     <main>
       <!-- Portfolio Section -->
       <section class="projects">
         <h2 id="portfolio">Portfolio</h2>
-        <div class="row">
+        <div class="cf">
           <div class="card">
-            <img src="img/portfolio-1.png" alt="Marking web page layout">
-            <h3>Marketing Page</h3>
-            <p>For this project I created a landing page for premier marketing agency.</p>
-          </div>
+              <img src="img/portfolio-1.png" alt="Marking web page layout">
+              <h3>Marketing Page</h3>
+              <p>For this project I created a landing page for premier marketing agency.</p>
+            </div>
           <div class="card">
-            <img src="img/portfolio-2.png" alt="Search web page layout">
-            <h3>Search Page</h3>
-            <p>I worked with a team of talented developers in creating a Google Search contender.</p>
-          </div>
+              <img src="img/portfolio-2.png" alt="Search web page layout">
+              <h3>Search Page</h3>
+              <p>I worked with a team of talented developers in creating a Google Search contender.</p>
+            </div>
           <div class="card">
-            <img src="img/portfolio-3.png" alt="Travel app layout">
-            <h3>Travel App</h3>
-            <p>In this project I created a next generation of travel planning and booking platform.</p>
-          </div>
-        </div>
-        <div class="row">
+              <img src="img/portfolio-3.png" alt="Travel app layout">
+              <h3>Travel App</h3>
+              <p>In this project I created a next generation of travel planning and booking platform.</p>
+            </div>
           <div class="card">
-            <img src="img/portfolio-4.png" alt="Map of favorited places">
-            <h3>Map of Favorite Spots</h3>
-            <p>I created this map API to quickly mark locations I enjoy to visit.</p>
-          </div>
+              <img src="img/portfolio-4.png" alt="Map of favorited places">
+              <h3>Map of Favorite Spots</h3>
+              <p>I created this map API to quickly mark locations I enjoy to visit.</p>
+            </div>
           <div class="card">
-            <img src="img/portfolio-5.png" alt="Photo gallery layout">
-            <h3>Photo Gallery</h3>
-            <p>This custom gallery layout responsively serves images, with unique transitions.</p>
-          </div>
+              <img src="img/portfolio-5.png" alt="Photo gallery layout">
+              <h3>Photo Gallery</h3>
+              <p>This custom gallery layout responsively serves images, with unique transitions.</p>
+            </div>
           <div class="card">
-            <img src="img/portfolio-6.png" alt="Claculator layout">
-            <h3>Calculator</h3>
-            <p>Using logic scripts, this calculator allows people to enter a value and get a dynamic result</p>
-          </div>
+              <img src="img/portfolio-6.png" alt="Claculator layout">
+              <h3>Calculator</h3>
+              <p>Using logic scripts, this calculator allows people to enter a value and get a dynamic result</p>
+            </div>
         </div>
       </section>
       <!-- Portfolio Section -->
@@ -76,7 +76,7 @@
       </section>
       <!-- Contact Section -->
       <section class="contact-wrapper">
-        <div class="contact">
+        <div class="contact-inner">
           <h2 id="contact">Contact</h2>
           <p class="contact-body">If you are interested in talking more about how we can partner on your next project, I'd love to hear more from you.</p>
           <p>Phone <span class="contact-info"><a href="tel:1–122-821-1201">+1 (122) 821–1201</a></span></p>
@@ -87,14 +87,15 @@
       <!-- Footer Section -->
     <footer class="cf">
       <div class="footer-name">
-        <a href="#"><h4>Gedalya Krycer</h1></a>
+        <a href="#"><h4>Gedalya Krycer</h4></a>
       </div>
       <div class="footer-nav">
         <ul>
           <li><a href="#top">Back To Top</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#social">Social Media</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#">Home</a></li>
         </ul>
       </div>
 
