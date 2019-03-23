@@ -60,6 +60,7 @@ p,
 a {
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
