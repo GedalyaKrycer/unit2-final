@@ -60,7 +60,6 @@ p,
 a {
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
-  color: inherit;
 }
 
 ul {
@@ -93,6 +92,7 @@ nav {
 
 .top-nav {
   margin-top: 1rem;
+  color: #E88968;
 }
 
 .top-nav li {
